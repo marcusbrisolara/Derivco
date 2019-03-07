@@ -8,7 +8,7 @@ namespace Derivco.Services
     {
         public static string ToJson(this List<MenuItem> menuItems)
         {            
-            return JsonConvert.SerializeObject(menuItems);
+            return JsonConvert.SerializeObject(menuItems, Formatting.Indented);
         }
     }
 }
